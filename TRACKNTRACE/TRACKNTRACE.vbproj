@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{14C8B2DA-3F40-4C45-8527-CA73EBEE8E39}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TRACKNTRACE.My.MyApplication</StartupObject>
+    <RootNamespace>TRACKNTRACE</RootNamespace>
+    <AssemblyName>TRACKNTRACE</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TRACKNTRACE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TRACKNTRACE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="FlexCell, Version=3.0.15.0, Culture=neutral, PublicKeyToken=6f86587eb70ee309" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WSMBT, Version=2.5.0.0, Culture=neutral, PublicKeyToken=3b3e4f51300bed33, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CNNCLASS.vb" />
+    <Compile Include="CUSTOMER MASTER.Designer.vb">
+      <DependentUpon>CUSTOMER MASTER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER MASTER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DAILY REPORT.Designer.vb">
+      <DependentUpon>DAILY REPORT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DAILY REPORT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DISPATCH.Designer.vb">
+      <DependentUpon>DISPATCH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DISPATCH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportViewer.Designer.vb">
+      <DependentUpon>frmReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GENFUNCTION.vb" />
+    <Compile Include="INSPECTION.Designer.vb">
+      <DependentUpon>INSPECTION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INSPECTION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LINEMASTER.Designer.vb">
+      <DependentUpon>LINEMASTER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LINEMASTER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.vb">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN.vb" />
+    <Compile Include="MAINMODULE.vb" />
+    <Compile Include="MMDI.Designer.vb">
+      <DependentUpon>MMDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MMDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ORDER FEEDING.Designer.vb">
+      <DependentUpon>ORDER FEEDING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ORDER FEEDING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PACKING.Designer.vb">
+      <DependentUpon>PACKING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PACKING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PALLET CREATE.Designer.vb">
+      <DependentUpon>PALLET CREATE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PALLET CREATE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCT MASTER.Designer.vb">
+      <DependentUpon>PRODUCT MASTER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCT MASTER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RptDsnModule.vb" />
+    <Compile Include="SCANNING.Designer.vb">
+      <DependentUpon>SCANNING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCANNING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STOCK TRANSFER.Designer.vb">
+      <DependentUpon>STOCK TRANSFER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STOCK TRANSFER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER CREATION.Designer.vb">
+      <DependentUpon>USER CREATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="USER CREATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER PERMISSION.Designer.vb">
+      <DependentUpon>USER PERMISSION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="USER PERMISSION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CUSTOMER MASTER.resx">
+      <DependentUpon>CUSTOMER MASTER.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DAILY REPORT.resx">
+      <DependentUpon>DAILY REPORT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DISPATCH.resx">
+      <DependentUpon>DISPATCH.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportViewer.resx">
+      <DependentUpon>frmReportViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INSPECTION.resx">
+      <DependentUpon>INSPECTION.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LINEMASTER.resx">
+      <DependentUpon>LINEMASTER.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMDI.resx">
+      <DependentUpon>MMDI.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ORDER FEEDING.resx">
+      <DependentUpon>ORDER FEEDING.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PACKING.resx">
+      <DependentUpon>PACKING.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PALLET CREATE.resx">
+      <DependentUpon>PALLET CREATE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCT MASTER.resx">
+      <DependentUpon>PRODUCT MASTER.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCANNING.resx">
+      <DependentUpon>SCANNING.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STOCK TRANSFER.resx">
+      <DependentUpon>STOCK TRANSFER.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER CREATION.resx">
+      <DependentUpon>USER CREATION.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER PERMISSION.resx">
+      <DependentUpon>USER PERMISSION.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="REPORT\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
